@@ -1,0 +1,104 @@
+﻿#titreBanniere {
+    background-image: url('../../img/accueil.png');
+    background-size: 90px;
+    height: 90px;
+}
+
+#tableau img {
+    position: fixed;
+    top: 50px;
+    width: 30px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu img {
+    width: 30px;
+}
+
+#refreshbottom img {
+    width: 30px;
+}
+
+.txtBase {
+    font-size: 12px;
+    font-family: 'dinregular', Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 5px #0e4371;
+}
+
+.atelierTitre {
+    font-size: 32px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 8px #0e4371;
+}
+
+.titreQuizzIndex {
+    font-size: 32px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 8px #0e4371;
+}
+
+.titreQuizz {
+    font-size: 32px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 8px #0e4371;
+}
+
+.sousTitreQuizz {
+    font-size: 25px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 8px #0C4675;
+}
+
+.DisplayForMobile {
+    display: block;
+}
+
+.displayForScreen {
+    display: none;
+}
+
+div #listeQuizz {
+    display: block;
+}
+
+div #listeQuizzTable {
+    display: none;
+}
+
+.bouton {
+    opacity: 1;
+}
+
+.bouton img {
+    width: 500px;
+    /*    padding-bottom:70px;*/
+    border: none;
+}
+
+.indexImg50 {
+    width: 50%;
+    opacity: 1;
+}
+
+.nca {
+    top: 20px;
+    width: 100px;
+}
+
+.vdn {
+    top: 15px;
+    width: 100px;
+}
+
+label {
+    font-size: 12px;
+}

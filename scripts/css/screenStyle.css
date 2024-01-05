@@ -1,0 +1,701 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* =Reset default browser CSS
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}   -------------------------------------------------------------- */
+
+
+/*Déclaration des blocks dans le cas d'ie inférieur à 9 */
+
+abbr,
+article,
+aside,
+canvas,
+dataliste,
+figure,
+dialog,
+footer,
+header,
+hgroup,
+meter,
+nav,
+output,
+progress,
+section,
+time,
+video div {
+    display: block;
+}
+
+
+/*-----######## Déclaration des fontes #######-----*/
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../../font/din-rg-webfont.eot');
+    src: url('../../font/din-rg-webfont.eot?#iefix') format('embedded-opentype'), url('../../font/din-rg-webfont.woff') format('woff'), url('../../font/din-rg-webfont.ttf') format('truetype'), url('../../font/din-rg-webfont.svg#dinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brush455_btregular';
+    src: url('../../font/brush445bt-webfont.eot');
+    src: url('../../font/brush445bt-webfont.eot?#iefix') format('embedded-opentype'), url('../../font/brush445bt-webfont.woff2') format('woff2'), url('../../font/brush445bt-webfont.woff') format('woff'), url('../../font/brush445bt-webfont.ttf') format('truetype'), url('../../font/brush445bt-webfont.svg#dinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'dinregular', 'brush455_btregular', Arial, sans-serif;
+    background-color: #b4b8d9;
+    /*
+    background-image: url('../../img/wood-texture-1.jpg');
+    background-attachment: fixed;
+*/
+    /*color:#3b3b3b;*/
+    text-decoration: none;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.bg {
+    display: none;
+}
+
+
+/*------########## BANDEAU EN-TETE ########--------*/
+
+#bannierePrinted {
+    display: none;
+}
+
+header {
+    height: 120px;
+}
+
+header img {
+    width: 150px;
+}
+
+.titreBanniere {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'brush455_btregular', Arial, sans-serif, ;
+    color: #fff;
+    text-shadow: 0 0 8px #0e4371;
+    top: 100px;
+}
+
+#Banniere {
+    z-index: 1;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    background-color: #43617a;
+    /*#2fcda4;*/
+    padding: 1px;
+    top: 0;
+    background-image: url('../../img/banniere.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+}
+
+.nca {
+    position: fixed;
+    top: 25px;
+    left: 2px;
+}
+
+.vdn {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+#InfoLargeurPage {
+    z-index: 1;
+    position: fixed;
+    top: 10px;
+    left: 25px;
+}
+
+#InfoHauteurPage {
+    z-index: 1;
+    position: fixed;
+    top: 10px;
+    right: 25px;
+}
+
+#menu {
+    width: 50px;
+    z-index: 1;
+    position: fixed;
+    top: 120px;
+}
+
+ul {
+    padding: 10px;
+    list-style-type: none;
+}
+
+#menu img {
+    width: 50px;
+    opacity: 0.7;
+}
+
+#refreshbottom img {
+    width: 50px;
+    opacity: 0.7;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+}
+
+#top {
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    /*border: 1px solid #fff;*/
+}
+
+#top img {
+    width: 50px;
+}
+
+#bottom {
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    left: 10px;
+    top: 70px;
+}
+
+#bottom img {
+    width: 50px;
+}
+
+
+/*---------########## CORPS /QUESTIONS ##########---------------*/
+
+#main {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.DisplayForMobile {
+    display: none;
+}
+
+.displayForScreen {
+    display: block;
+}
+
+
+/*--------########## MISE EN FORME DU TEXTE #######----------------*/
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+.txtBase {
+    font-size: 24px;
+    font-family: 'dinregular', Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 5px #0e4371;
+}
+
+.atelierTitre {
+    text-align: center;
+    margin: auto;
+    font-size: 72px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 5px #106BBA;
+}
+
+.titreQuizzIndex {
+    font-size: 48px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 8px #0e4371;
+}
+
+.titreQuizz {
+    font-size: 52px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 8px #0e4371;
+}
+
+.sousTitreQuizz {
+    font-size: 38px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 8px #0C4675;
+}
+
+.titreQuestSize {
+    padding-top: 50px;
+    padding-bottom: 500px;
+    color: #FFF;
+}
+
+.questsize {
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    /*	min-height:450px;*/
+    /*    height: 550px;*/
+    font-size: 1.5em;
+    color: #FFF;
+}
+
+.questsizeEnd {
+    margin: auto;
+    padding-top: 150px;
+    /*    padding-bottom:20px;*/
+    /*	min-height:450px;*/
+    /*    height: 550px;*/
+    font-size: 1.5em;
+    color: #FFF;
+}
+
+.questsizeEnd img {
+    width: 30%;
+}
+
+.questsize img {
+    width: 30%;
+}
+
+.imgchoix img {
+    width: 20%;
+}
+
+.questsize img a {
+    border: none;
+}
+
+.good img {
+    width: 70%;
+}
+
+.faux img {
+    width: 70%;
+}
+
+.question {
+    /*font-size: 24px;*/
+    background-color: #43617a/*#4c6d80*/
+    ;
+    padding: 40px;
+    line-height: 100%;
+    color: #fff;
+    border: 3px solid #212542;
+    font-weight: bold;
+}
+
+.choix {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.navigation {
+    padding: 2px;
+}
+
+.reponse {
+    /*padding-left: 10px;*/
+    padding: 5px;
+    background-color: #ff0d00;
+    color: #fff;
+}
+
+.detailsReponse {
+    /*padding-left: 10px;*/
+    padding: 5px;
+    background-color: #A4A5AD;
+    color: #0f0e0e;
+}
+
+.bouton img {
+    width: 1000px;
+    /*    padding-bottom:70px;*/
+    border: none;
+}
+
+.bouton1 img {
+    width: 70px;
+}
+
+.bouton {
+    text-align: center;
+    padding-top: 0px;
+    /*background: #43617a;*/
+    opacity: 0.8;
+}
+
+.bouton:hover {
+    /*background: #588fac;*/
+    opacity: 1;
+}
+
+.boutonLancement {
+    text-align: center;
+    background: #43617a;
+    color: #ffffff;
+}
+
+.boutonLancement:hover {
+    background: #588fac;
+}
+
+
+/*######################TABLEAU DES RESULTATS###################*/
+
+
+/*icone/bouton*/
+
+#tableau img {
+    position: fixed;
+    top: 75px;
+    right: 10px;
+    width: 30px;
+}
+
+.titreCompteurs {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 72px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #43617a;
+}
+
+#titrePrinted {
+    display: none;
+}
+
+.tableauCompteurs {
+    text-align: center;
+    width: 1024px;
+    margin: auto;
+}
+
+.titreQuizzResultats {
+    font-size: 24px;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 4px #43617a;
+    text-align: right;
+}
+
+.dateResultats {
+    font-size: 200%;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 4px #43617a;
+    text-align: left;
+}
+
+.dateQuiz {
+    font-size: 100%;
+    font-family: 'brush455_btregular', Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 4px #43617a;
+    text-align: left;
+}
+
+.nomEquipe {
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+}
+
+.cellule {
+    /*line-height:middle;*/
+    height: 20px;
+    text-align: center;
+    border: solid 1px #096F9B;
+}
+
+.total {
+    margin: auto;
+    text-align: center;
+    font-size: 48px;
+    width: 80px;
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    width: 25%;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    text-align: center;
+    background: #43617a;
+    color: #ffffff;
+}
+
+#cacherResultats {
+    background: #fff;
+    color: #43617a;
+}
+
+
+/*##############Taille des images de la page d'INDEX##################*/
+
+div #listeQuizz {
+    display: none;
+}
+
+div #listeQuizzTable {
+    display: block;
+}
+
+td img {
+    width: 270px;
+    opacity: 1;
+}
+
+td img:hover {
+    opacity: 0.8;
+}
+
+.indexImg50 {
+    width: 50%;
+    opacity: 1;
+}
+
+.indexImg50:hover {
+    opacity: 1;
+}
+
+.good {
+    /*width: 200px;*/
+    line-height: 70px;
+    background-color: #287f14;
+    color: #fff;
+    margin: auto;
+}
+
+.faux {
+    /*width: 200px;*/
+    line-height: 70px;
+    background-color: #287f14;
+    color: #fff;
+    margin: auto;
+}
+
+.details {
+    /*width: 200px;*/
+    line-height: 50px;
+    background-color: #24147f;
+    color: #fff;
+    margin: auto;
+}
+
+#results {
+    width: 200px;
+    line-height: 70px;
+    margin: auto;
+    background: #640069;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: 4px solid;
+    position: relative;
+    bottom: 20px;
+}
+
+#results:hover {
+    background: #dd6a26;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+#go {
+    margin: auto;
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+    cursor: pointer;
+    border: 3px solid #fff;
+    background-color: #007fc4;
+    opacity: 10px;
+}
+
+#go:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #9d04b1;
+    position: relative;
+}
+
+#goSuivant {
+    margin: auto;
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+    cursor: pointer;
+    border: 3px solid #fff;
+    background-color: #007fc4;
+    bottom: 43px;
+    position: relative;
+    left: 300px;
+}
+
+#goSuivant:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    ;
+    background-color: #9d04b1;
+    position: relative;
+    left: 300px;
+}
+
+#goRetour {
+    margin: auto;
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+    cursor: pointer;
+    border: 3px solid #fff;
+    background-color: #007fc4;
+    bottom: 43px;
+    position: relative;
+    right: 300px;
+}
+
+#goRetour:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #9d04b1;
+    position: relative;
+    right: 300px;
+}
+
+#goRetourCinq {
+    margin: auto;
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+    cursor: pointer;
+    border: 3px solid #fff;
+    background-color: #007fc4;
+    top: 50px;
+    position: relative;
+    right: 300px;
+}
+
+#goRetourCinq:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #9d04b1;
+    position: relative;
+    right: 300px;
+}
+
+#bas {
+    margin: auto;
+    cursor: pointer;
+    padding: 10px;
+    cursor: pointer;
+    /*border: 1px solid #fff;*/
+}
+
+#bas img {
+    width: 70px;
+}
+
+#resultats {
+    cursor: pointer;
+    z-index: 1;
+    top: 2px;
+    right: 2px;
+    padding: 12px;
+    position: fixed;
+    /*color:#ffffff;
+background: #C10023;*/
+}
+
+#categorylist {
+    margin-top: 0px;
+    display: none;
+}
+
+#category1,
+#category2,
+#category3,
+#category4,
+#category5,
+#category11,
+#category22 {
+    display: none;
+}
+
+#goodReponse1,
+#goodReponse2,
+#goodReponse3,
+#goodReponse4,
+#goodReponse5 {
+    display: none;
+}
+
+#detailsReponse1,
+#detailsReponse2,
+#detailsReponse3,
+#detailsReponse4,
+#detailsReponse5 {
+    display: none;
+}
+
+#closing {
+    display: none;
+    font-style: italic;
+}

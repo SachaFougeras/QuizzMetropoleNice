@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+
+nav, section, article
+{
+    display: inline;
+    zoom: 1;
+}
