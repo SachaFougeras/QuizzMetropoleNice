@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>QUIZZ - Vos impressions...</title>
+    <meta charset="utf-8">
+    <!-- L' attribut viewport sert à afficher la page selon le nombre de pixels d'un smartphone
+		- "content" affiche à la taille de l'écran.
+		- "user-scalable" permet ou pas d'autoriser le zoom. valeur "yes" or "no"-->
+
+    <meta name="viewport" content="width=device-width, user-scalable=yes initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <script>
+        var p1 = 0
+        var p2 = 0
+        var p3 = 0
+        var p4 = 0
+        var p5 = 0
+    </script>
+    <!-- Media Queries pour afficher des informations selon la taillle du périphérique -->
+    <link rel="stylesheet" href="scripts/css/screenStyle.css" media="screen" />
+    <link rel="stylesheet" href="scripts/css/mobileStyle.css" media="screen and (max-width:768px)" />
+    <link rel="stylesheet" href="scripts/css/printers.css" media="screen" />
+    <link rel="apple-touch-icon" href="img/accueil.png" />
+    <script type="text/javascript" src="scripts/js/jquery.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="scripts/js/quizz-printers.js" charset="UTF-8"></script>
+
+    <!-- Gestion d'affichage d'images ou de videos dans une boite en surperposition -->
+    <script type="text/javascript" src="scripts/html5lightbox/jquery.js"></script>
+    <script type="text/javascript" src="scripts/html5lightbox/html5lightbox.js"></script>
+
+
+    <!--[if lt IE 9]
+    <link rel="stylesheet" href="scripts/css/style_ie.css" />
+    <script> src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+
+</head>
+
+<body id="haut">
+    <header>
+
+        <div id="Banniere">
+            <h1 class="titreBanniere">Quizz et Faq</h1><img class="nca" src="img/logo_nca.png" alt="" title="" /><img class="vdn" src="img/logo_vdn.png" alt="" title="" /></div>
+
+    </header>
+
+    <nav id="menu">
+        <ul>
+
+            <li>
+                <a href="#haut"><img src="img/navigation/haut.png" alt="" title="" /></a>
+            </li>
+            <li>
+                <a href="#bas"><img src="img/navigation/bas.png" alt="" title="" /></a>
+            </li>
+            <li id="faq">
+                <a href="FAQ/index.html"><img src="img/navigation/faq.png" alt="" title="" /></a>
+            </li>
+            <li id="refresh">
+                <a href="#haut"><img src="img/navigation/refresh.png" alt="" title="" /></a>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="main" class="choix">
+        <section class="titreQuestSize">
+            <h1 class="titreQuizz">Impressions et Photocopies</h1>
+
+            <span class="sousTitreQuizz">Testez vos connaissances à propos des photocopieurs mis à votre disposition ?</span>
+            <p>Lancez le Quizz puis sélectionnez votre réponse en cliquant sur l'un des boutons.</p>
+            <br/>
+            <div id="bonneChance">
+                <img src="https://acegif.com/wp-content/gifs/bonne-chance-11.gif" />
+                </a>
+
+            </div>
+            <a href="#Q1"><input id="go" style=color:#fff type="button" value="Lancez le Quizz!"></a>
+        </section>
+
+
+
+        <!--	#######Le Quizz !#######-->
+        <section id="Q1" class="questsize">
+            <div>
+                <a href="img/quizz-images/printers-sharp3750.png" class="html5lightbox " data-group="Q02" title=""><img src="img/quizz-images/printers-sharp3750.png" alt="" title="" /></a>
+                <p class="question">Q1. Chaque Direction dispose-t-elle d'un budget dédié à la location et la maintenance des photocopieurs ?</p>
+
+                <table class="choix">
+                    <tr>
+                        <td><input type="radio" name="q1" value="a" id="q1a" onclick="p1=1"></td>
+                        <td><input type="radio" name="q1" value="b" id="q1b" onclick="p1=0"></td>
+                        <td><input type="radio" name="q1" value="c" id="q1c" onclick="p1=0"></td>
+                        <td><input type="radio" name="q1" value="d" id="q1d" onclick="p1=0"></td>
+                        <td><input type="radio" name="q1" value="e" id="q1e" onclick="p1=0"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="q1a">OUI</label></td>
+                        <td><label for="q1b">NON</label></td>
+                        <td><label for="q1c">Seulement pour la maintenance</label></td>
+                        <td><label for="q1d">Seulement pour la location</label></td>
+                        <td><label for="q1e">Je ne sais pas</label></td>
+                    </tr>
+                </table>
+
+
+
+
+
+                <br> <br>
+
+                <a href="#Q2"><input id="goSuivant" style=color:#fff type="button" value="SUIVANT">
+                </a>
+
+
+
+
+
+            </div>
+            <!-- Affichage des éléments de réponse bonne ou fausse après validation. Par défaut ils sont cachés-->
+            <p class="reponse" id="category1">La réponse était <strong>OUI</strong>.</p>
+            <p class="good" id="goodReponse1">C'est une bonne réponse</p>
+            <p class="details" id="detailsReponse1">Le budget est là pour déterminer les besoins et en fixer la consommation.</p>
+
+            <table>
+                <tr>
+                    <!--<td><a class ="bouton" href="#Q1"><img src="img/navigation/precedente.png" alt="" title=""/></a></td>-->
+                    <td>
+                        <a class="bouton" href="#Q2"><img src="img/navigation/suivante.png" alt="" title="" /></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <hr/>
+        <section id="Q2" class="questsize">
+            <div>
+                <a href="img/quizz-images/printers-budget.png" class="html5lightbox" title=""><img src="img/quizz-images/printers-budget.png" alt="" title="" /></a>
+                <p class="question">Q2. A quoi les photocopieurs sont-ils rattachés ? </p>
+                <table class="choix">
+                    <tr>
+                        <td><input type="radio" name="q2" value="a" id="q2a" onclick="p2=0"></td>
+                        <td><input type="radio" name="q2" value="b" id="q2b" onclick="p2=0"></td>
+                        <td><input type="radio" name="q2" value="c" id="q2c" onclick="p2=0"></td>
+                        <td><input type="radio" name="q2" value="d" id="q2d" onclick="p2=1"></td>
+                        <td><input type="radio" name="q2" value="e" id="q2e" onclick="p2=0"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="q2a">Au Service</label></td>
+                        <td><label for="q2b">A la Direction</label></td>
+                        <td><label for="q2c">A la DGA</label></td>
+                        <td><label for="q2d">Tout le monde</label></td>
+                        <td><label for="q2e">Je ne sais pas</label></td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+                <br> <br>
+                <a href="#Q3"><input id="goSuivant" style=color:#fff type="button" value="SUIVANT"></a>
+                <a href="#Q1"><input id="goRetour" style=color:#fff type="button" value="RETOUR"></a>
+
+
+
+
+
+
+
+            </div>
+            <!-- Affichage des éléments de réponse bonne ou fausse après validation. Par défaut ils sont cachés-->
+            <p class="reponse" id="category2">La réponse était <strong>Tout le monde</strong>.</p>
+            <p class="good" id="goodReponse2">C'est une bonne réponse</p>
+            <p class="details" id="detailsReponse2">Les photocopieurs sont mis à la disposition de tout le monde. Seul le budget est rattaché aux directions</p>
+
+            <table>
+                <tr>
+                    <td>
+                        <a class="bouton" href="#Q1"><img src="img/navigation/precedente.png" alt="" title="" /></a>
+                    </td>
+                    <td>
+                        <a class="bouton" href="#Q3"><img src="img/navigation/suivante.png" alt="" title="" /></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <hr/>
+        <section id="Q3" class="questsize">
+            <div>
+                <a href="img/quizz-images/printers-color-vs-n&b.png" class="html5lightbox" title=""><img src="img/quizz-images/printers-color-vs-n&b.png" alt="" title="" /></a>
+                <p class="question">Q3. Combien coûte une copie/impression couleur ?</p>
+                <table class="choix">
+                    <tr>
+                        <td><input type="radio" name="q3" value="a" id="q3a" onclick="p3=0"></td>
+                        <td><input type="radio" name="q3" value="b" id="q3b" onclick="p3=0"></td>
+                        <td><input type="radio" name="q3" value="c" id="q3c" onclick="p3=0"></td>
+                        <td><input type="radio" name="q3" value="d" id="q3d" onclick="p3=1"></td>
+                        <td><input type="radio" name="q3" value="e" id="q3e" onclick="p3=0"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="q3a">3 copies N&B</label></td>
+                        <td><label for="q3b">5 copies N&B</label></td>
+                        <td><label for="q3c">7 copies N&B</label></td>
+                        <td><label for="q3d">10 copies N&B</label></td>
+                        <td><label for="q3e">Je ne sais pas</label></td>
+                    </tr>
+                </table>
+
+
+
+
+
+                <br> <br>
+                <!--<p style="font-size:0.75em;"  id="goSuivant" class ="boutonQsuivante" ><a href="#Q4">Suivant</a></p>
+	<p style="font-size:0.75em;"  id="goRetour"  class="boutonQprecedente"> <a href="#Q2">Retour</a></p>-->
+
+                <a href="#Q4"><input id="goSuivant" style=color:#fff type="button" value="SUIVANT"></a>
+                <a href="#Q2"><input id="goRetour" style=color:#fff type="button" value="RETOUR"></a>
+
+
+
+
+            </div>
+            <!-- Affichage des éléments de réponse bonne ou fausse après validation. Par défaut ils sont cachés-->
+            <p class="reponse" id="category3">La réponse était <strong>10 copies N&B</strong>.</p>
+            <p class="good" id="goodReponse3">C'est une bonne réponse</p>
+            <p class="details" id="detailsReponse3">1 copie couleur coûte le prix de 10 copies Noir et Blanc.</p>
+            <table>
+                <tr>
+                    <td>
+                        <a class="bouton" href="#Q2"><img src="img/navigation/precedente.png" alt="" title="" /></a>
+                    </td>
+                    <td>
+                        <a class="bouton" href="#Q4"><img src="img/navigation/suivante.png" alt="" title="" /></a>
+                    </td>
+                    <td>
+                        <a class="bouton" href="#Q3"><img src="img/navigation/suivante.png" alt="" title="" /></a>
+                    </td>
+                    <td>
+                        <a class="bouton" href="#Q1"><img src="img/navigation/suivante.png" alt="" title="" /></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <hr/>
+        <section id="Q4" class="questsize">
+            <div>
+                <a href="img/quizz-images/printers-code.png" class="html5lightbox" title=""><img src="img/quizz-images/printers-code.png" alt="" title="" /></a>
+                <p class="question">Q4. Que sont les codes couleurs ?</p>
+                <table class="choix">
+                    <tr>
+                        <td><input type="radio" name="q4" value="a" id="q4a" onclick="p4=0"></td>
+                        <td><input type="radio" name="q4" value="b" id="q4b" onclick="p4=0"></td>
+                        <td><input type="radio" name="q4" value="c" id="q4c" onclick="p4=0"></td>
+                        <td><input type="radio" name="q4" value="d" id="q4d" onclick="p4=1"></td>
+                        <td><input type="radio" name="q4" value="e" id="q4e" onclick="p4=0"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="q4a">Personnels</label></td>
+                        <td><label for="q4b">Confidentiels</label></td>
+                        <td><label for="q4c">Partagés</label></td>
+                        <td><label for="q4d">Personnels et confidentiels</label></td>
+                        <td><label for="q4e">Je ne sais pas</label></td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+                <br> <br>
+                <a href="#Q5"><input id="goSuivant" style=color:#fff type="button" value="SUIVANT"></a>
+                <a href="#Q3"><input id="goRetour" style=color:#fff type="button" value="RETOUR"></a>
+
+
+
+
+
+
+            </div>
+            <!-- Affichage des éléments de réponse bonne ou fausse après validation. Par défaut ils sont cachés-->
+            <p class="reponse" id="category4">La réponse était <strong>Personnels et confidentiels</strong>.</p>
+            <p class="good" id="goodReponse4">C'est une bonne réponse</p>
+            <p class="details" id="detailsReponse4">Les codes couleur sont personnels et confidentiels, ils sont attribués selon des critères professionnels et en fonction des besoins liés aux différentes tâches du service.</p>
+            <table>
+                <tr>
+                    <td>
+                        <a class="bouton" href="#Q3"><img src="img/navigation/precedente.png" alt="" title="" /></a>
+                    </td>
+                    <td>
+                        <a class="bouton" href="#Q5"><img src="img/navigation/suivante.png" alt="" title="" /></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <hr/>
+        <section id="Q5" class="questsize">
+            <div>
+                <a href="img/quizz-images/printers-codecouleurs.png" class="html5lightbox" title=""><img src="img/quizz-images/printers-codecouleurs.png" alt="" title="" /></a>
+                <p class="question">Q5. Que permettent les codes couleurs ?</p>
+                <table class="choix">
+                    <tr>
+                        <td><input type="radio" name="q5" value="a" id="q5a" onclick="p5=0"></td>
+                        <td><input type="radio" name="q5" value="b" id="q5b" onclick="p5=0"></td>
+                        <td><input type="radio" name="q5" value="c" id="q5c" onclick="p5=0"></td>
+                        <td><input type="radio" name="q5" value="d" id="q5d" onclick="p5=1"></td>
+                        <td><input type="radio" name="q5" value="e" id="q5e" onclick="p5=0"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="q5a">Imprimer et photocopier ou assurer le suivi des consommations</label></td>
+                        <td><label for="q5b">Imprimer ou photocopier ou assurer le suivi des consommations</label></td>
+                        <td><label for="q5c">Imprimer et photocopier et assurer le suivi des consommations</label></td>
+                        <td><label for="q5d">Imprimer ou photocopier et assurer le suivi des consommations</label></td>
+                        <td><label for="q5e">Je ne sais pas</label></td>
+                    </tr>
+                </table>
+
+
+
+                <a href="#Q4"><input id="goRetourCinq" style=color:#fff type="button" value="RETOUR"></a>
+
+
+
+
+
+            </div>
+            <!-- Affichage des éléments de réponse bonne ou fausse après validation. Par défaut ils sont cachés-->
+            <br>
+            <p class="reponse" id="category5">La réponse était <strong>Imprimer et photocopier et assurer le suivi des consommations</strong>.</p>
+            <p class="good" id="goodReponse5">C'est une bonne réponse</p>
+            <p class="details" id="detailsReponse5"></p>
+            <table>
+                <tr>
+                    <!-- <td><a class ="bouton" href="#Q4"><img src="img/navigation/precedente.png" alt="" title=""/></a></td> -->
+                    <!-- <td><a class ="bouton" href="#Q6"><img src="img/navigation/suivante.png" alt="" title=""/></a></td> -->
+                </tr>
+            </table>
+        </section>
+
+        <div id="results" style="font-size:1.2em;">
+            Voir le résultat !
+
+        </div>
+
+
+        <section id="category11">
+            <hr />
+            <p id="bravo" class="good">BRAVO !!! Vous avez répondu juste à toutes les questions. Vous êtes quelqu'un d'incurable niveau impression et photocopie. C'est donc un domaine qui ne vous ait pas inconnue.
+                <br/><img src="img/minions.gif" alt="Bravo" />
+                <br/>Votre score est de 5 sur 5.</div>
+
+    <div></div>
+
+    <!-- <br/><span id="refreshbottom"><a href="#haut"><img src="img/navigation/refresh.png" alt="" title=""/></a></span> -->
+    </section>
+    <section id="category22">
+        <hr />
+        <p id="faux" class="faux">
+            <script type="text/javascript">
+                if (total == 4) {
+                    alert("Vous êtes douées dans cet catégorie mais vous devez poursuivre vos efforts pour atteindre le sans faute")
+                }
+            </script>
+            DOMMAGE !!! Vous n'étiez pas loin !
+            <br/>
+            <center><img src="img/mauvaise-reponse.gif" </center> alt="faux" />
+                <br/></div>
+                <!-- <br/><span id="refreshbottom"><a href="#haut"><img src="img/navigation/refresh.png" alt="" title=""/></a></span> -->
+    </section>
+    <hr />
+    <div id="bas" class="txtBase">Quizz - Impressions et Photocopies<br />
+        <p><span id="date_heure" class="dateQuiz"></span>
+            <script type="text/javascript">
+                window.onload = date_heure('date_heure');
+            </script>
+        </p>
+    </div>
+    </div>
+
+</body>
+
+</body>
+
+</html>
